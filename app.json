@@ -1,0 +1,40 @@
+{
+  "name": "rha-rest-activity",
+  "description": "A barebone REST custom activity for Journey Builder",
+  "repository": "https://github.com/heroku/node-js-sample",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "Journey Builder"],
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+    "JB_ACTIVITY_NAME": {
+      "description": "Default name of the CA in the JB palette"
+    },
+    "JB_APP_ID": {
+      "description": "Application ID in AppCenter"
+    },
+    "JB_APP_SIGNATURE": {
+      "description": "App Signature in AppCenter"
+    },
+    "JB_AUTH_URL": {
+      "description": "API Authentication URL",
+      "value": "https://auth.exacttargetapis.com/v1/requestToken?legacy=1"
+    },
+    "JB_CLIENT_ID": {
+      "description": "Client ID in AppCenter"
+    },
+    "JB_CLIENT_SECRET": {
+      "description": "Client Secret in AppCenter"
+    },
+    "JB_ACTIVITY_KEY": {
+      "description": "Activity Key in App Center"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}

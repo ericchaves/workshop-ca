@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Custom Activity</title>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script data-main="customActivity.js" src="js/require.js"></script>
+        <style type="text/css">
+            body {
+                padding: 20px;
+                margin: 0;
+            }
+            .step {
+                display: none;
+            }
+            #step1 {
+                display: block;
+            }
+            #payload {
+                position: relative;
+                width: 100%;
+                height: 30em;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="step1" class="step">
+			<div>
+				<p>
+					Seleccione una plantilla:
+				</p>
+			</div>
+			<div>
+				<select id="dropDownMenu">
+					<option value="">Seleccione un valor...</option>
+				</select>
+			</div>
+			<div><p></p><p></p></div>
+			<div>
+				<button id="toggleLastStep">Activar step DEBUG</button>
+			</div>
+        </div>
+        <div id="step2" class="step">
+			<p>
+				ATENCIÓN: esta pantalla es editable. La configuración se guardará al finalizar con los cambios realizados en esta pantalla.
+			</p>
+            <textarea id="payload"></textarea>
+        </div>
+    </body>
+</html>

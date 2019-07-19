@@ -1,0 +1,21 @@
+{
+  "name": "workshop-ca",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "SalesForce Marketing Cloud, Dev Advocate Team",
+  "contributors": [
+    "Ricardo den Haan <rdenhaanalonso@salesforce.com>"
+  ],
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fuel-auth": "^3.0.2",
+    "fuel-rest": "^3.0.4",
+    "jwt-simple": "^0.5.1",
+    "request": "^2.87.0",
+    "serve-static": "^1.13.2"
+  }
+}
