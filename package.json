@@ -14,7 +14,7 @@
     "express": "^4.16.3",
     "fuel-auth": "^3.0.2",
     "fuel-rest": "^3.0.4",
-    "jwt-simple": "^0.5.1",
+    "jwt-simple": "^0.5.3",
     "request": "^2.87.0",
     "serve-static": "^1.13.2"
   }
